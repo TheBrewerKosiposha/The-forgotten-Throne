@@ -19,4 +19,9 @@ function player_state_roll(){
 	{
 		state = player_state_free;
 	}
+	
+	if(_collider){
+	state = player_state_free;
+	ScreenShake(8,30);
+	}
 }
